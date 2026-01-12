@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+</head>
+<style>
+    body {
+        background-color: #ccc;
+        color: #fff;
+        font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+</style>
+<body>
+    
+    <input type="text" name="nome" id="nome" placeholder="nome">
+    <input type="text" name="nome" id="idade" placeholder="Idade">
+
+    <button id="botao" onclick="verificar()">
+        Verificar
+    </button>
+
+    <p id="res">
+
+    </p>
+
+    <script>
+        function verificar() {
+            let nome = document.getElementById('nome')
+            let idade = document.getElementById('idade')
+
+            let res = document.getElementById('res')
+
+            let i = idade.value
+
+            if (i < 18) {
+                res.innerText = `Voce tem ${i} anos e és menor de idade`
+            } else {
+                res.innerText = `Voce tem ${i} anos e és maior de idade`
+            }
+
+        }
+    </script>
+</body>
+</html>
