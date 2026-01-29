@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburguer</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <header class="bg-black text-white font-semibold pt-2.5">
+        <div class="flex justify-between pb-2">
+            <h1 class="text-4xl">StockFlow</h1>
+            <div class="pr-5">
+                <i class="fa-solid fa-bars"  id="btn-menu"></i>
+
+                <i class="fa-solid fa-x" style="display: none;" id="close"></i>
+            </div>
+        </div>
+        <nav class="hidden sm:block" id="menu">
+            <ul class="sm:flex sm:justify-end">
+                <li class="border-2 border-white p-2  sm:border-none  text-center">Home</li>
+                <li class="border-2 border-white p-2 sm:border-none  text-center">Sobre</li>
+                <li class="border-2 border-white p-2  sm:border-none text-center">Contactos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>

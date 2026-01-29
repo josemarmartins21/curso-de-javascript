@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(0, 128, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
+
+header {
+    h1 {
+        color: #fff;
+        text-align: center;
+    }
+}
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.294);
+}
+
+footer {
+    font-family: italic;
+    color: #fff;
+    text-align: center;
+}
+
+#foto {
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 4px solid orange;
+    object-fit: cover;
+}
